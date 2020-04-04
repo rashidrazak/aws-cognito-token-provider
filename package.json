@@ -1,0 +1,22 @@
+{
+  "name": "aws-cognito-token-provider",
+  "version": "1.0.0",
+  "description": "A localhost-based solution for providing accessToken from AWS cognito. Alternative to command line solution.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rashid Razak",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.2.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
