@@ -106,7 +106,7 @@ function login(callback) {
   const cognitoUser = new AmazonCognitoIdentity.CognitoUser(user_data);
   cognitoUser.authenticateUser(authenticationDetails, {
     onSuccess: function(result) {
-      var accesstoken = result.getAccessToken().getJwtToken();
+      var accesstoken = result.getIdToken().getJwtToken();
       callback(null, accesstoken);
     },
     onFailure: function(err) {
